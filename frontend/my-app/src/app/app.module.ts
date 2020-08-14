@@ -1,20 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AgmCoreModule } from '@agm/core';
+import { AgmCoreModule, GoogleMapsAPIWrapper } from '@agm/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CenterCreatorComponent } from './center-creator/center-creator.component';
+import { CenterCreatorComponent } from './components/center-creator/center-creator.component';
 import { AccordionModule } from 'primeng/accordion';     //accordion and accordion tab
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 import { DynamicDialogModule } from 'primeng/dynamicdialog';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { MenuItem } from 'primeng/api';
-import { MenubarComponent } from './menubar/menubar.component';
-import { MapComponent } from './map/map.component';                  //api
-
+import { MenubarComponent } from './components/menubar/menubar.component';
+import { MapComponent } from './components/map/map.component';                  //api
+import { MarkerManager } from '@agm/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,9 +30,10 @@ import { MapComponent } from './map/map.component';                  //api
     AccordionModule,
     BrowserAnimationsModule,
     ButtonModule,
-    DynamicDialogModule
+    DynamicDialogModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MarkerManager,GoogleMapsAPIWrapper],
   bootstrap: [AppComponent],
   entryComponents: [
     CenterCreatorComponent
