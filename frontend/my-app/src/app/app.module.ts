@@ -26,7 +26,6 @@ import { MarkerManager } from '@agm/core';
     BrowserModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-
     }),
     AccordionModule,
     BrowserAnimationsModule,
