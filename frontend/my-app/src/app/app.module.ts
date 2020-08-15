@@ -17,13 +17,16 @@ import { MenubarComponent } from './components/menubar/menubar.component';
 import { MapComponent } from './components/map/map.component';                  //api
 import { MarkerManager } from '@agm/core';
 import { SingleInputComponent } from './components/single-input/single-input.component';
+import { ComponentRunComponent } from './components/component-run/component-run.component';
+import { RunComponent } from './components/run/run.component';
 @NgModule({
   declarations: [
     AppComponent,
     CenterCreatorComponent,
     MenubarComponent,
     MapComponent,
-    SingleInputComponent
+    SingleInputComponent,
+    RunComponent
   ],
   imports: [
     BrowserModule,
