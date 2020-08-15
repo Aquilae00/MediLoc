@@ -1,6 +1,7 @@
 from .entities.entity import Session,engine,Base
 from .entities.population import Population, PopulationSchema
 from flask import Flask, jsonify, request
+from algorithm import run
 
 
 # generate database schema

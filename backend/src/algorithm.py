@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 
 def run(XCOORDINATES, YCOORDINATES, POPULATION, CENTROIDS, MANPOWER):
+    ##CREATE VILLAGE DATAFRAME##
     VILLAGES = pd.DataFrame({
         'x': XCOORDINATES,
         'y': YCOORDINATES,
@@ -16,11 +17,9 @@ def run(XCOORDINATES, YCOORDINATES, POPULATION, CENTROIDS, MANPOWER):
 
     VILLAGES['colorID'] = labels
     VILLAGES['population'] = POPULATION
+    ##VILLAGE DATAFRAME COMPLETE##
 
-    ###VILLAGE DataFrame complete###
-
-
-
+    ##CREATE CENTERS DATAFRAME##
     centroids = kmeans.cluster_centers_  # returns list containing x-y coordinates (in list) of centroids
 
     centroidx = []
@@ -36,8 +35,7 @@ def run(XCOORDINATES, YCOORDINATES, POPULATION, CENTROIDS, MANPOWER):
         'colorID': list(dict.fromkeys(labels))
     })
 
-
-    ##population calculations##
+    ##manpower calculations based on population##
     organizedvillages = []
     for i in CENTERS['colorID']:
         cluster = []
@@ -55,13 +53,16 @@ def run(XCOORDINATES, YCOORDINATES, POPULATION, CENTROIDS, MANPOWER):
 
     CENTERS['manpower'] = manpower
 
-    return CENTERS
+    ##CENTERS DATAFRAME COMPLETE##
 
+    return [VILLAGES, CENTERS]
 
+"""
 XCOORDINATES = [1,2,3,4,5,6,7,8,9]
 YCOORDINATES = [9,8,7,6,5,4,3,2,1]
 POPULATION = [12,21,34,54,67,32,10,67,34]
 CENTROIDS = 3
 MANPOWER = 30
 
-print(run(XCOORDINATES, YCOORDINATES, POPULATION, CENTROIDS, MANPOWER))
+run(XCOORDINATES, YCOORDINATES, POPULATION, CENTROIDS, MANPOWER)
+"""
