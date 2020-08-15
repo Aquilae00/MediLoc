@@ -37,7 +37,6 @@ export class MapComponent implements OnInit {
     private markerManager: MarkerManager,
     private covidCountryService: CovidCountryService,
     private dialogService: DialogService
-
   ) { }
 
   ngOnInit() {
