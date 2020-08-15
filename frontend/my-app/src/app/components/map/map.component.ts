@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { MarkerManager, AgmMarker } from '@agm/core';
 import { CovidCountryService } from '../../services/covid-country.service';
+import { SingleInputComponent } from '../single-input/single-input.component';
+import { DialogService } from 'primeng/dynamicdialog';
 
 
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css'],
+  providers: [DialogService]
 })
 export class MapComponent implements OnInit {
 
@@ -32,7 +35,8 @@ export class MapComponent implements OnInit {
   location: Location;
   constructor(
     private markerManager: MarkerManager,
-    private covidCountryService: CovidCountryService
+    private covidCountryService: CovidCountryService,
+    private dialogService: DialogService
 
   ) { }
 
@@ -63,6 +67,12 @@ export class MapComponent implements OnInit {
     })
   }
 
+  addMarkerClick() {
+    this.dialogService.open(SingleInputComponent,{
+      header: 'Enter',
+      width: '70%'
+    })
+  }
 }
 
 interface Marker {
