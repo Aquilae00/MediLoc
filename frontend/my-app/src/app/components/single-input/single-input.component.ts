@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingleInputComponent implements OnInit {
 
-  input: string;
+  val: number;
   constructor() { }
 
   ngOnInit(): void {

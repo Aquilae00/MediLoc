@@ -10,6 +10,8 @@ import { ButtonModule } from 'primeng/button';
 import { DynamicDialogModule } from 'primeng/dynamicdialog';
 import { HttpClientModule } from '@angular/common/http';
 import {InputTextModule} from 'primeng/inputtext';
+import {InputNumberModule} from 'primeng/inputnumber';
+import { FormsModule } from '@angular/forms';
 
 
 import { MenuItem } from 'primeng/api';
@@ -17,8 +19,10 @@ import { MenubarComponent } from './components/menubar/menubar.component';
 import { MapComponent } from './components/map/map.component';                  //api
 import { MarkerManager } from '@agm/core';
 import { SingleInputComponent } from './components/single-input/single-input.component';
-import { ComponentRunComponent } from './components/component-run/component-run.component';
 import { RunComponent } from './components/run/run.component';
+import { RunPopUpComponent } from './components/run-pop-up/run-pop-up.component';
+import { InfoBoxComponent } from './components/info-box/info-box.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +30,9 @@ import { RunComponent } from './components/run/run.component';
     MenubarComponent,
     MapComponent,
     SingleInputComponent,
-    RunComponent
+    RunComponent,
+    RunPopUpComponent,
+    InfoBoxComponent
   ],
   imports: [
     BrowserModule,
@@ -39,13 +45,16 @@ import { RunComponent } from './components/run/run.component';
     ButtonModule,
     DynamicDialogModule,
     HttpClientModule,
-    InputTextModule
+    InputTextModule,
+    InputNumberModule,
+    FormsModule
   ],
   providers: [MarkerManager,GoogleMapsAPIWrapper],
   bootstrap: [AppComponent],
   entryComponents: [
     CenterCreatorComponent,
-    SingleInputComponent
+    SingleInputComponent,
+    RunPopUpComponent
   ]
 })
 export class AppModule { }

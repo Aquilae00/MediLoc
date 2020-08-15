@@ -49,7 +49,7 @@ export class MapComponent implements OnInit {
       markers: [
       ]
     }
-    
+
     this.covidCountryService.collect().subscribe(data => {
       data.data.forEach(d => {
         console.log(d);
@@ -69,8 +69,8 @@ export class MapComponent implements OnInit {
 
   addMarkerClick() {
     this.dialogService.open(SingleInputComponent,{
-      header: 'Enter',
-      width: '70%'
+      header: 'Create Village',
+      width: '40%'
     })
   }
 }
