@@ -1,4 +1,3 @@
-from villages import Village
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -18,25 +17,25 @@ OUTPUTS:
 
 
 ## Variables ##
+#XCOORDINATES = []
+#YCOORDINATES = []
+POPULATION = [1]*5000
 CENTROIDS = 15  # number of centers
 MANPOWER = 60  # number of workers
-#X-COORDINATES = []
-#Y-COORDINATES = []
-POPULATION = [1]*5000
 
 coordinates = pd.read_csv("Book3.csv")  # DELETE THIS LATER
 
 """
 coordinates = pd.DataFrame({
-    'x': X-COORDINATES,
-    'y': Y-COORDINATES
+    'x': XCOORDINATES,
+    'y': YCOORDINATES
 })
 
 df = pd.DataFrame({
-    'x': X-COORDINATES,
-    'y': Y-COORDINATES,
+    'x': XCOORDINATES,
+    'y': YCOORDINATES,
     'population': POPULATION,
-    'centroid-id': [0]*len(df)
+    'centroid-id': [0]*len(coordinates)
 })
 """
 
@@ -95,5 +94,5 @@ centers['manpower'] = manpower
 
 
 # OUTPUT 1: centers['x'] & centers['y']
-# OUTPUT 2: centers['centroid-id']
+# OUTPUT 2: centroid-id
 # OUTPUT 3: centers['manpower']

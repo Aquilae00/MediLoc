@@ -1,0 +1,5 @@
+<div class="p-grid p-d-flex p-mb-2">
+    <agm-map [latitude]="location.latitude" [longitude]="location.longitude" [zoom]="location.zoom" (mapClick)="addMarkerClick()">
+        <agm-marker *ngFor="let marker of location.markers" [latitude]="marker.lat" [longitude]="marker.lng"></agm-marker>
+    </agm-map>
+</div>
