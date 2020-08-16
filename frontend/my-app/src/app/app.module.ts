@@ -34,7 +34,7 @@ import { RunPopUpComponent } from './components/run-pop-up/run-pop-up.component'
     BrowserModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      // "apiKey": "AIzaSyD_muun5_t4Zy1veBnqQ3HpMe7r9NE7bII"
+
     }),
     AccordionModule,
     BrowserAnimationsModule,
