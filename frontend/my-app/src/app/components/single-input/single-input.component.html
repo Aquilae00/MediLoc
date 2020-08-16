@@ -1,5 +1,14 @@
+<div>
+
+</div>
+
 <div class="p-d-flex p-flex-column">
-    <p> Enter Population Size </p> <div class="p-mb-2"> <p-inputNumber [(ngModel)]="val"></p-inputNumber> </div>
-    <div class="p-mb-2"><button pButton type="button" label="Create Village Marker" class="p-button-rounded p-button-danger"></button></div>
     
+    
+
+    <div class="p-mb-2"><p>Latitude:</p><input type="text" pInputText [(ngModel)]="latitude"/></div>
+    <div class="p-mb-2"><p>Longitude:</p><input type="text" pInputText [(ngModel)]="longitude"/></div>
+    <div class="p-mb-2"><p>Population:</p><input type="text" pInputText [(ngModel)]="population"/></div>
+    
+    <button pButton pRipple type="button" label="Area Generator" class="p-button-rounded p-button-danger" (click)="setFields()"></button>
 </div>

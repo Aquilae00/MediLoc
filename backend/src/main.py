@@ -4,12 +4,14 @@ from .entities.center import Center, CenterSchema
 from flask import Flask, jsonify, request
 from .algorithm import algorithm
 import json
+from flask_cors import CORS
 
 # generate database schema
 Base.metadata.create_all(engine)
 
 # creating the Flask application
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/village')
 def get_village():
@@ -38,14 +40,11 @@ def add_village():
     # return jsonify(new_village), 201
     return request.get_json()
 
-@app.route('/run')
+@app.route('/run', methods=['POST'])
 def run_algorithm():
-    # input_json = request.get_json()
-    # center_num = input_json['center_num']
-    # worker_num = input_json['worker_num']
-
-    center_num = 3
-    worker_num = 30 
+    input_json = request.get_json()
+    center_num = input_json['center_num']
+    worker_num = input_json['worker_num']
 
     session = Session()
     village_objects = session.query(Village).all()
@@ -81,7 +80,7 @@ def run_algorithm():
     session.commit()
     session.close()
 
-    return str(center_load)
+    return jsonify(data)
 
 @app.route('/get_center')
 def get_center():
