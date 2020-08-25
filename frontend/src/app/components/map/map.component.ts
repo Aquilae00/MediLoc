@@ -48,12 +48,12 @@ export class MapComponent implements OnInit {
   placeMarker(event: google.maps.MouseEvent) {
     let elat = event.latLng.lat();
     let elng = event.latLng.lng();
-    console.log(elat, elng);
+    // console.log(elat, elng);
     let ref = this.dialogService.open(SingleInputComponent, {
       header: 'Create Centers',
       width: '40%'
     }).onClose.subscribe((pop: number) => {
-      console.log("REEE");
+      // console.log("REEE");
       const marker = this.googleMaps.generateMarker(event.latLng);
       marker.addListener('click', () => {
         this.infowindow.setContent(`population: ${pop}`);

@@ -42,8 +42,8 @@ export class ClientService {
       'center_num': center_num,
       'worker_num': worker_num
     }
-    console.log(object);
-    console.log(this.baseUrl+"/run2");
+    // console.log(object);
+    // console.log(this.baseUrl+"/run2");
     return this.http.post<any>(this.baseUrl+"/run2", object)
   }
 }

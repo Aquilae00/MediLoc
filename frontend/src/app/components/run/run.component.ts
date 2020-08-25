@@ -19,7 +19,7 @@ export class RunComponent implements OnInit {
     private dialogService: DialogService) { }
 
   openRunPopup() {
-    console.log(this.villages);
+    // console.log(this.villages);
     const ref = this.dialogService.open(RunPopUpComponent, {
       data: {
         villages: this.villages

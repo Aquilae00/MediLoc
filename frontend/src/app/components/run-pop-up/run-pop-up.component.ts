@@ -37,7 +37,7 @@ export class RunPopUpComponent implements OnInit {
     });
     this.client.run2(longitudes,latitudes,populations,parseInt(this.centerNum),parseInt(this.manpower)).subscribe( data => {
       data.forEach( d => {
-        console.log(d)
+        // console.log(d)
         const latLng = new google.maps.LatLng(d.y,d.x);
         const marker = this.googleMaps.generateMarker(latLng);
         marker.setIcon("assets/img/pin_1.png");
