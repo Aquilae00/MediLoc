@@ -12,9 +12,10 @@
 ## 1. Angular
 `ng build` outputs to backend/src/static
 <br>
-<a href="https://github.com/Aquilae00/GarudaHacks/tree/master/frontend">more details</a>
+<a href="https://github.com/Aquilae00/GarudaHacks/tree/master/frontend">More details</a>
 ## 2. Flask
 `flask run`
-<a href="https://github.com/Aquilae00/GarudaHacks/tree/master/backend">more details</a>
+<br>
+<a href="https://github.com/Aquilae00/GarudaHacks/tree/master/backend">More details</a>
 ## 3. Navigation
 http://127.0.0.1:5000/
