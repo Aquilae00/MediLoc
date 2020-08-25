@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { DynamicDialogRef } from 'primeng/dynamicdialog';
 
+/**
+ * @author Brian Linaldi
+ */
 @Component({
   selector: 'app-single-input',
   templateUrl: './single-input.component.html',

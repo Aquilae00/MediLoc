@@ -4,6 +4,9 @@ import { DialogService } from 'primeng/dynamicdialog';
 import { RunPopUpComponent } from '../run-pop-up/run-pop-up.component';
 import { Village } from 'src/app/interfaces/interface-importer';
 
+/**
+ * @author: Brian Linaldi
+ */
 @Component({
   selector: 'app-run',
   templateUrl: './run.component.html',

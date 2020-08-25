@@ -1,6 +1,9 @@
 import { Injectable, OnInit, ViewChild } from '@angular/core';
 import { MapsMarkerService } from './maps-marker.service';
 
+/**
+ * @author Brian Linaldi
+ */
 @Injectable({
   providedIn: 'root',
 })

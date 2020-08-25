@@ -7,6 +7,9 @@ import { Village } from 'src/app/interfaces/interface-importer';
 import { GoogleMapsService } from 'src/app/services/google-maps.service';
 
 
+/**
+ * @author: Brian Linaldi
+ */
 @Component({
   selector: 'app-run-pop-up',
   templateUrl: './run-pop-up.component.html',
