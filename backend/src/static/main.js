@@ -89,7 +89,7 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.title);
-    } }, directives: [_components_map_map_component__WEBPACK_IMPORTED_MODULE_1__["MapComponent"]], styles: ["@import url(//db.onlinewebfonts.com/c/3c5514673d764fe183b0b38aae1279c7?family=Iceland);\r\nh1[_ngcontent-%COMP%] {\r\nwidth: 363px;\r\nheight: 55px;\r\nleft: 28px;\r\ntop: 28px;\r\n\r\nfont-family: Iceland;\r\nfont-style: normal;\r\nfont-weight: normal;\r\nfont-size: 72px;\r\nline-height: 70px;\r\ntext-align: center;\r\n\r\ncolor: #E50027;\r\n\r\ntext-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBLHNGQUFzRjtBQUN0RjtBQUNBLFlBQVk7QUFDWixZQUFZO0FBQ1osVUFBVTtBQUNWLFNBQVM7O0FBRVQsb0JBQW9CO0FBQ3BCLGtCQUFrQjtBQUNsQixtQkFBbUI7QUFDbkIsZUFBZTtBQUNmLGlCQUFpQjtBQUNqQixrQkFBa0I7O0FBRWxCLGNBQWM7O0FBRWQsNENBQTRDO0FBQzVDIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuQGltcG9ydCB1cmwoLy9kYi5vbmxpbmV3ZWJmb250cy5jb20vYy8zYzU1MTQ2NzNkNzY0ZmUxODNiMGIzOGFhZTEyNzljNz9mYW1pbHk9SWNlbGFuZCk7XHJcbmgxIHtcclxud2lkdGg6IDM2M3B4O1xyXG5oZWlnaHQ6IDU1cHg7XHJcbmxlZnQ6IDI4cHg7XHJcbnRvcDogMjhweDtcclxuXHJcbmZvbnQtZmFtaWx5OiBJY2VsYW5kO1xyXG5mb250LXN0eWxlOiBub3JtYWw7XHJcbmZvbnQtd2VpZ2h0OiBub3JtYWw7XHJcbmZvbnQtc2l6ZTogNzJweDtcclxubGluZS1oZWlnaHQ6IDcwcHg7XHJcbnRleHQtYWxpZ246IGNlbnRlcjtcclxuXHJcbmNvbG9yOiAjRTUwMDI3O1xyXG5cclxudGV4dC1zaGFkb3c6IDBweCA0cHggNHB4IHJnYmEoMCwgMCwgMCwgMC4yNSk7XHJcbn0iXX0= */"] });
+    } }, directives: [_components_map_map_component__WEBPACK_IMPORTED_MODULE_1__["MapComponent"]], styles: ["h1[_ngcontent-%COMP%] {\r\nwidth: 363px;\r\nheight: 55px;\r\nleft: 28px;\r\ntop: 28px;\r\n\r\nfont-family: Iceland;\r\nfont-style: normal;\r\nfont-weight: normal;\r\nfont-size: 72px;\r\nline-height: 70px;\r\ntext-align: center;\r\n\r\ncolor: #E50027;\r\n\r\ntext-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQSxZQUFZO0FBQ1osWUFBWTtBQUNaLFVBQVU7QUFDVixTQUFTOztBQUVULG9CQUFvQjtBQUNwQixrQkFBa0I7QUFDbEIsbUJBQW1CO0FBQ25CLGVBQWU7QUFDZixpQkFBaUI7QUFDakIsa0JBQWtCOztBQUVsQixjQUFjOztBQUVkLDRDQUE0QztBQUM1QyIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaDEge1xyXG53aWR0aDogMzYzcHg7XHJcbmhlaWdodDogNTVweDtcclxubGVmdDogMjhweDtcclxudG9wOiAyOHB4O1xyXG5cclxuZm9udC1mYW1pbHk6IEljZWxhbmQ7XHJcbmZvbnQtc3R5bGU6IG5vcm1hbDtcclxuZm9udC13ZWlnaHQ6IG5vcm1hbDtcclxuZm9udC1zaXplOiA3MnB4O1xyXG5saW5lLWhlaWdodDogNzBweDtcclxudGV4dC1hbGlnbjogY2VudGVyO1xyXG5cclxuY29sb3I6ICNFNTAwMjc7XHJcblxyXG50ZXh0LXNoYWRvdzogMHB4IDRweCA0cHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcclxufSJdfQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -337,12 +337,12 @@ class MapComponent {
     placeMarker(event) {
         let elat = event.latLng.lat();
         let elng = event.latLng.lng();
-        console.log(elat, elng);
+        // console.log(elat, elng);
         let ref = this.dialogService.open(_single_input_single_input_component__WEBPACK_IMPORTED_MODULE_2__["SingleInputComponent"], {
             header: 'Create Centers',
-            width: '40%'
+            width: '60%'
         }).onClose.subscribe((pop) => {
-            console.log("REEE");
+            // console.log("REEE");
             const marker = this.googleMaps.generateMarker(event.latLng);
             marker.addListener('click', () => {
                 this.infowindow.setContent(`population: ${pop}`);
@@ -497,7 +497,7 @@ class RunPopUpComponent {
         });
         this.client.run2(longitudes, latitudes, populations, parseInt(this.centerNum), parseInt(this.manpower)).subscribe(data => {
             data.forEach(d => {
-                console.log(d);
+                // console.log(d)
                 const latLng = new google.maps.LatLng(d.y, d.x);
                 const marker = this.googleMaps.generateMarker(latLng);
                 marker.setIcon("assets/img/pin_1.png");
@@ -577,13 +577,13 @@ class RunComponent {
         this.dialogService = dialogService;
     }
     openRunPopup() {
-        console.log(this.villages);
+        // console.log(this.villages);
         const ref = this.dialogService.open(_run_pop_up_run_pop_up_component__WEBPACK_IMPORTED_MODULE_2__["RunPopUpComponent"], {
             data: {
                 villages: this.villages
             },
             header: 'Create Centers',
-            width: '40%'
+            width: '60%'
         });
     }
     ngOnInit() {
@@ -772,8 +772,8 @@ class ClientService {
             'center_num': center_num,
             'worker_num': worker_num
         };
-        console.log(object);
-        console.log(this.baseUrl + "/run2");
+        // console.log(object);
+        // console.log(this.baseUrl+"/run2");
         return this.http.post(this.baseUrl + "/run2", object);
     }
 }

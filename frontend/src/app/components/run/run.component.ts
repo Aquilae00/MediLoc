@@ -25,7 +25,7 @@ export class RunComponent implements OnInit {
         villages: this.villages
       },
       header: 'Create Centers',
-      width: '40%'
+      width: '60%'
     })
   }
   ngOnInit(): void {

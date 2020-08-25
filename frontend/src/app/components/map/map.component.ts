@@ -51,7 +51,7 @@ export class MapComponent implements OnInit {
     // console.log(elat, elng);
     let ref = this.dialogService.open(SingleInputComponent, {
       header: 'Create Centers',
-      width: '40%'
+      width: '60%'
     }).onClose.subscribe((pop: number) => {
       // console.log("REEE");
       const marker = this.googleMaps.generateMarker(event.latLng);
