@@ -742,27 +742,28 @@ __webpack_require__.r(__webpack_exports__);
 class ClientService {
     constructor(http) {
         this.http = http;
+        this.baseUrl = "https://mediloc.herokuapp.com";
     }
-    addVillage(count, latitude, longitude) {
-        return this.http.post('http://127.0.0.1:5000/village', {
-            'count': count,
-            'latitude': latitude,
-            'longitude': longitude,
-            'color_id': 0
-        });
-    }
-    getVillages() {
-        return this.http.get('http://127.0.0.1:5000/village');
-    }
-    run(centerNum, worker_num) {
-        return this.http.post('http://127.0.0.1:5000/run', {
-            "center_num": centerNum,
-            "worker_num": worker_num
-        });
-    }
-    get_centers() {
-        return this.http.get('http://127.0.0.1:5000/get_center');
-    }
+    // addVillage(count:number, latitude: number, longitude:number): Observable<any> {
+    //   return this.http.post<any>('http://127.0.0.1:5000/village', {
+    //     'count': count,
+    //     'latitude': latitude,
+    //     'longitude': longitude,
+    //     'color_id': 0 
+    //   });
+    // }
+    // getVillages(): Observable<any> {
+    //   return this.http.get<any>('http://127.0.0.1:5000/village');
+    // }
+    // run(centerNum: number, worker_num:number): Observable<any> {
+    //   return this.http.post<any>('http://127.0.0.1:5000/run', {
+    //     "center_num": centerNum,
+    //     "worker_num": worker_num
+    //   })
+    // }
+    // get_centers(): Observable<any> {
+    //   return this.http.get<any>('http://127.0.0.1:5000/get_center');
+    // }
     run2(longitudes, latitudes, populations, center_num, worker_num) {
         const object = {
             'longitudes': longitudes,
@@ -772,7 +773,8 @@ class ClientService {
             'worker_num': worker_num
         };
         console.log(object);
-        return this.http.post('http://127.0.0.1:5000/run2', object);
+        console.log(this.baseUrl + "/run2");
+        return this.http.post(this.baseUrl + "/run2", object);
     }
 }
 ClientService.ɵfac = function ClientService_Factory(t) { return new (t || ClientService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
