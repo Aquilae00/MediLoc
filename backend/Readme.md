@@ -8,3 +8,4 @@ Windows: run command `set FLASK_APP=main.py`
 
 ## Step 2:
 run command `flask run`
+
