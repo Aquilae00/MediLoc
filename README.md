@@ -1,6 +1,6 @@
 # MediLoc
 <h3><a href="https://mediloc.herokuapp.com/">Webapp Demo</a></h3>
-<li>Languages: JavaScript, Python, Typescript, MySql, HTML, CSS
+<li>Languages: JavaScript, Python, Typescript, MySQL, HTML, CSS
 <li>Front-End: Angular, Typescript, JavaScript, PrimeNG, Angular Google Map Module, Google Maps API
 <li>BackEnd: Python, scikit-learn, matplotlib, pandas, numpy, SQL Alchemy, MySQL, marshmallow, flask
 
